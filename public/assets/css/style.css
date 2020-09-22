@@ -1,0 +1,50 @@
+li {
+  padding: 5px;
+  margin: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+.body{
+  /* background-color: skyblue; */
+  background-image: url(/assets/image/bg15.jpg);
+  padding: 5px;
+  padding-left: 50px;
+  padding-bottom: 40px;
+
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 40px;
+
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+}
+.fontStyle{
+  font-family: "Raleway", sans-serif
+}
+.jumbotron{
+  /* background-color:red !important; */
+  background-image: url(/assets/image/burger1.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tableStyle{
+  margin-left: auto;
+  margin-right: auto;
+}
+.imageStyle{
+  width: 50%;
+  height: 50%;
+}

@@ -1,0 +1,44 @@
+
+<table class="tableStyle">
+  <tr>
+    <th>
+      <h2>New burgers!</h2>
+      {{!-- true=1 --}}
+      
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </th>
+
+    <th>
+      <h2>burgers that are devoured!</h2>
+      {{!-- false=0 --}}
+      <ul><del>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+          {{/if}}
+    
+        {{/each}}
+        </del>
+      </ul>
+    </th>
+  </tr>
+  <tr>
+    {{!-- Add a new burger --}}
+    <h2>Add a New Burger</h2>
+    <form class="create-form">
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="name">
+      </div>
+        <button type="submit" class="fontStyle btn btn-success">Add Burger</button>
+    </form>
+  </tr>
+</table>
+
+  
